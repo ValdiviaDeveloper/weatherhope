@@ -56,6 +56,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | NASA API Key
+    |--------------------------------------------------------------------------
+    |
+    | This value is used to authenticate with NASA's public APIs.
+    |
+    */
+
+    'nasa_api_key' => env('NASA_API_KEY'),
+        'openweather_api_key' => env('OPENWEATHER_API_KEY'),
+        'openweather_one_call_api_key' => env('OPENWEATHER_API_KEY'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
