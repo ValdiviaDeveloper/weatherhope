@@ -22,8 +22,7 @@ class WeatherController extends Controller
             'query' => 'required|string|max:255',
         ]);
 
-        // Aquí, en una versión más avanzada, interpretaríamos la 'query' para extraer lugar y fecha.
-        // Por ahora, la pasamos al servicio que tiene valores de ejemplo.
+        // En una versión más avanzada, se interpretaría la 'query' para extraer lugar y fecha.
         $result = $weatherService->getWeatherLikelihood($validated['query']);
 
         return response()->json($result);
@@ -76,7 +75,7 @@ class WeatherController extends Controller
 
         $latitude = $validated['latitude'];
         $longitude = $validated['longitude'];
-        $apiKey = config('app.nasa_api_key'); // We need to add this to config/app.php
+        $apiKey = config('app.nasa_api_key');
 
         $response = Http::get('https://power.larc.nasa.gov/api/temporal/daily/point', [
             'parameters' => 'T2M,PRECTOTCORR',
@@ -117,9 +116,8 @@ class WeatherController extends Controller
             $precipitations = array_reverse($data['properties']['parameter']['PRECTOTCORR']);
             foreach ($precipitations as $precip) {
                 if ($precip > -999) {
-                    // Precipitation is in mm. Let's convert it to a simple chance percentage for the voice response.
-                    // This is a simplified conversion for the prototype.
-                    $lastPrecip = min(round($precip * 10), 100); // Simple logic: 1mm = 10% chance, capped at 100%
+                    // La precipitación se convierte a un porcentaje simple para la respuesta de voz.
+                    $lastPrecip = min(round($precip * 10), 100); // Lógica simple: 1mm = 10% de probabilidad, con un tope de 100%
                     break;
                 }
             }

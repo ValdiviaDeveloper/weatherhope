@@ -1,5 +1,4 @@
 <x-guest-layout>
-    {{-- Usamos un contenedor principal para el fondo gradiente --}}
     <div class="relative min-h-screen bg-gradient-to-br from-blue-200 via-sky-400 to-indigo-600 dark:from-slate-900 dark:via-indigo-950 dark:to-slate-900 p-4 lg:p-0">
         <div class="flex flex-col lg:flex-row h-full max-h-screen">
 
