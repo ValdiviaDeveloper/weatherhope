@@ -8,15 +8,15 @@ Nuestra misión es empoderar a planificadores de eventos, agricultores, turistas
 
 ---
 
-## 🎯 El Problema
+## 🎯 El Problema: El Vacío en la Planificación a Largo Plazo
 
-La planificación de eventos importantes (bodas, vacaciones, siembras agrícolas) con meses de antelación se basa a menudo en la incertidumbre. Los pronósticos meteorológicos solo tienen un alcance de 1-2 semanas, dejando un vacío de información crucial para la toma de decisiones a largo plazo. ¿Es probable que llueva para mi boda al aire libre en julio? ¿Debería preocuparme por el calor extremo durante mis vacaciones en agosto?
+Planificar eventos importantes (bodas, vacaciones, siembras agrícolas) con meses de antelación es un ejercicio de incertidumbre. Los pronósticos meteorológicos solo cubren 1-2 semanas, dejando un vacío de información crítico. Esto obliga a tomar decisiones a ciegas, sin una base de datos sólida que responda a preguntas clave como: *"¿Qué tan probable es que llueva para mi boda en julio?"* o *"¿Debería preocuparme por el calor extremo en mis vacaciones de agosto?"*.
 
-## ✨ La Solución
+## ✨ La Solución: Traducir la Ciencia de la NASA en Respuestas Claras
 
-WeatherHope aborda este problema proporcionando un **análisis climático histórico** fácil de entender. Usando la vasta cantidad de datos de la NASA, nuestra aplicación calcula las condiciones más probables para cualquier coordenada y día del año, basándose en tendencias históricas.
+WeatherHope llena este vacío al actuar como un **traductor entre los complejos datos históricos de la NASA y el lenguaje cotidiano del usuario**. Nuestra aplicación no predice el futuro, sino que analiza décadas de datos de observación de la Tierra para ofrecer un análisis de probabilidad claro y accionable.
 
-A través de una interfaz de usuario moderna con efecto "glassmorphism", un mapa interactivo y un potente **asistente de voz**, transformamos datos complejos en respuestas claras y accionables.
+A través de una interfaz visualmente atractiva y, fundamentalmente, un **potente asistente de voz**, democratizamos el acceso a la ciencia. Transformamos datos científicos en respuestas directas a preguntas prácticas, permitiendo que cualquier persona pueda planificar su futuro con la confianza que solo décadas de datos de la NASA pueden ofrecer.
 
 ---
 
@@ -27,7 +27,6 @@ A través de una interfaz de usuario moderna con efecto "glassmorphism", un mapa
 *   **🗣️ Interfaz Controlada por Voz:** Realiza consultas complejas en lenguaje natural y recibe respuestas habladas y resaltadas en tiempo real.
 *   **☀️ Datos Múltiples:** Accede a información sobre la calidad del aire y el índice UV estimado.
 *   **📱 Diseño Moderno y Responsivo:** Una experiencia de usuario fluida y atractiva en cualquier dispositivo.
-*   **🔮 (Próximamente) Asistente de Planificación:** Recibe recomendaciones personalizadas para tus actividades (ej. "boda", "siembra", "vacaciones").
 
 ---
 
