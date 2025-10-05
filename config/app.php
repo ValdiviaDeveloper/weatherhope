@@ -63,9 +63,9 @@ return [
     |
     */
 
-    'nasa_api_key' => env('NASA_API_KEY'),
-        'openweather_api_key' => env('OPENWEATHER_API_KEY'),
-        'openweather_one_call_api_key' => env('OPENWEATHER_API_KEY'),
+        'nasa_api_key' => env('NASA_API_KEY'),
+        'gemini_api_key' => env('GEMINI_API_KEY'),
+        'openweather_api_key' => env('OPENWEATHER_API_KEY'),        'openweather_one_call_api_key' => env('OPENWEATHER_API_KEY'),
 
     /*
     |--------------------------------------------------------------------------

@@ -18,3 +18,5 @@ Route::middleware([
 });
 
 Route::get('/weather', [WeatherController::class, 'index'])->name('weather');
+Route::post('/weather/likelihood', [WeatherController::class, 'getWeatherLikelihood'])->name('weather.likelihood');
+Route::post('/weather/likelihood-text', [WeatherController::class, 'getWeatherLikelihoodByText'])->name('weather.likelihood.text');

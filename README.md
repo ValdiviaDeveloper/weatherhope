@@ -1,61 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# WeatherHope 🌦️
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**WeatherHope: Tu Máquina del Tiempo Climática para Planificar el Futuro.**
 
-## About Laravel
+WeatherHope es una aplicación web interactiva diseñada para el [NASA International Space Apps Challenge 2025](https://www.spaceappschallenge.org/). A diferencia de las aplicaciones de pronóstico del tiempo tradicionales que miran días hacia el futuro, WeatherHope utiliza décadas de datos de observación de la Tierra de la NASA para analizar el pasado y ofrecer probabilidades climáticas históricas.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Nuestra misión es empoderar a planificadores de eventos, agricultores, turistas y cualquier persona que necesite tomar decisiones a largo plazo, respondiendo a la pregunta: *"¿Cómo suele ser el clima en este lugar, en esta fecha específica?"*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🎯 El Problema
 
-## Learning Laravel
+La planificación de eventos importantes (bodas, vacaciones, siembras agrícolas) con meses de antelación se basa a menudo en la incertidumbre. Los pronósticos meteorológicos solo tienen un alcance de 1-2 semanas, dejando un vacío de información crucial para la toma de decisiones a largo plazo. ¿Es probable que llueva para mi boda al aire libre en julio? ¿Debería preocuparme por el calor extremo durante mis vacaciones en agosto?
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ✨ La Solución
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+WeatherHope aborda este problema proporcionando un **análisis climático histórico** fácil de entender. Usando la vasta cantidad de datos de la NASA, nuestra aplicación calcula las condiciones más probables para cualquier coordenada y día del año, basándose en tendencias históricas.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+A través de una interfaz de usuario moderna con efecto "glassmorphism", un mapa interactivo y un potente **asistente de voz**, transformamos datos complejos en respuestas claras y accionables.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Características Principales
 
-### Premium Partners
+*   **🗺️ Mapa Interactivo:** Selecciona cualquier punto del planeta para obtener datos climáticos.
+*   **📊 Análisis Histórico Detallado:** Consulta la temperatura promedio, el rango histórico y la probabilidad de precipitación basada en décadas de datos.
+*   **🗣️ Interfaz Controlada por Voz:** Realiza consultas complejas en lenguaje natural y recibe respuestas habladas y resaltadas en tiempo real.
+*   **☀️ Datos Múltiples:** Accede a información sobre la calidad del aire y el índice UV estimado.
+*   **📱 Diseño Moderno y Responsivo:** Una experiencia de usuario fluida y atractiva en cualquier dispositivo.
+*   **🔮 (Próximamente) Asistente de Planificación:** Recibe recomendaciones personalizadas para tus actividades (ej. "boda", "siembra", "vacaciones").
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🛠️ Pila Tecnológica
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+*   **Backend:** Laravel (PHP)
+*   **Frontend:** Blade, Tailwind CSS, JavaScript
+*   **APIs y Datos:**
+    *   **NASA POWER:** Para datos históricos de temperatura y precipitación.
+    *   **OpenWeatherMap:** Para datos complementarios de calidad del aire y pronóstico.
+    *   **Nominatim (OpenStreetMap):** Para geocodificación de búsquedas de lugares.
+*   **Librerías Clave:**
+    *   **Leaflet.js:** Para el mapa interactivo.
+    *   **Web Speech API (JavaScript):** Para el reconocimiento y síntesis de voz.
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## ⚙️ Instalación y Configuración Local
 
-## Security Vulnerabilities
+Sigue estos pasos para ejecutar WeatherHope en tu propio entorno:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/tu-usuario/weatherhope.git
+    cd weatherhope
+    ```
 
-## License
+2.  **Instalar dependencias:**
+    ```bash
+    composer install
+    npm install
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3.  **Configurar el entorno:**
+    *   Copia el archivo de ejemplo: `cp .env.example .env`
+    *   Genera la clave de la aplicación: `php artisan key:generate`
+    *   Abre el archivo `.env` y añade tus claves de API:
+        ```
+        NASA_API_KEY=TU_API_KEY_DE_LA_NASA
+        OPENWEATHER_API_KEY=TU_API_KEY_DE_OPENWEATHER
+        ```
+
+4.  **Base de datos:**
+    ```bash
+    php artisan migrate
+    ```
+
+5.  **Compilar assets y ejecutar el servidor:**
+    ```bash
+    npm run dev
+    php artisan serve
+    ```
+
+¡La aplicación estará disponible en `http://127.0.0.1:8000`!
+
+---
+
+## NASA Data in Action
+
+Este proyecto utiliza la API **POWER (Prediction Of Worldwide Energy Resources)** de la NASA. Específicamente, accedemos a los siguientes parámetros para cualquier coordenada geográfica:
+
+*   **T2M:** Temperatura del Aire a 2 Metros.
+*   **PRECTOTCORR:** Precipitación Total Corregida.
+
+Estos conjuntos de datos, que se remontan a décadas, son la columna vertebral de nuestro motor de análisis histórico, permitiéndonos calcular promedios, rangos y probabilidades con una base científica sólida.

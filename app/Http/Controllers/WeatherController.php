@@ -5,9 +5,52 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use App\Services\WeatherService; // Importamos nuestro nuevo servicio
 
 class WeatherController extends Controller
 {
+    /**
+     * Procesa una consulta de voz para obtener la probabilidad climática histórica.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Services\WeatherService $weatherService
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getWeatherLikelihood(Request $request, WeatherService $weatherService)
+    {
+        $validated = $request->validate([
+            'query' => 'required|string|max:255',
+        ]);
+
+        // Aquí, en una versión más avanzada, interpretaríamos la 'query' para extraer lugar y fecha.
+        // Por ahora, la pasamos al servicio que tiene valores de ejemplo.
+        $result = $weatherService->getWeatherLikelihood($validated['query']);
+
+        return response()->json($result);
+    }
+
+    /**
+     * Procesa una consulta de texto para obtener la probabilidad climática histórica.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Services\WeatherService $weatherService
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getWeatherLikelihoodByText(Request $request, WeatherService $weatherService)
+    {
+        $validated = $request->validate([
+            'location' => 'required|string|max:255',
+            'date' => 'required|date_format:Y-m-d',
+        ]);
+
+        $result = $weatherService->getWeatherLikelihoodForLocationAndDate(
+            $validated['location'],
+            $validated['date']
+        );
+
+        return response()->json($result);
+    }
+
     /**
      * Display the weather view.
      *
